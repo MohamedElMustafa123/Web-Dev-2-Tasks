@@ -1,0 +1,514 @@
+/*body style*/
+body{
+    margin: 150px; /*margin around the body*/
+    margin-top: 30px;
+    background-color: #e9e9e9;
+}
+
+/*content container styling*/
+.content{
+    background-color: white;
+}
+
+/*Header style*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Main logo width adjustment*/
+.logo{
+    width: 200px;
+}
+
+nav{
+    margin-top: 20px; /*space between logo and nav*/
+}
+
+/*nav links styling*/
+nav a{
+    margin: 0 80px;
+    text-decoration: none;
+    color: black;
+
+}
+
+/*Main heading styling*/
+h1{
+    font-size: 100px;
+    margin-bottom: 0;
+    font-family: "Protest Guerrilla";
+    margin: 20px;
+}
+
+/*Main heading styling*/
+h2{
+    font-size: 40px;
+    margin-top: 0;
+    font-family: "Protest Guerrilla";
+    margin-left: 20px;
+}
+
+/*main paragraph styling*/
+#p1{
+    width: 600px;
+    word-wrap: break-word;
+    font-family: Josefin Sans;
+    margin-left: 20px;
+}
+
+/*Column Layout*/
+.columns {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+.column {
+    flex: 1; 
+    margin: 0 20px; 
+}
+
+/*Styling for column headings*/
+.heading{
+    font-size: 48px;
+    font-family: "Protest Guerrilla";
+}
+
+/*styling for column paragraphs*/
+.heading-text{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Josefin Sans;
+}
+
+/*Album covers layout*/
+.album-covers{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.album-covers img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*For the image cover to take more space within the container*/
+.cover1{
+    grid-row: 1/3;
+}
+
+/*Author section style*/
+.author-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: -100px;
+    padding-bottom: 50px;
+    
+}
+
+.author-info {
+    max-width: 70%;
+}
+
+.about-author h2 {
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.about-author p {
+    font-family: Josefin Sans;
+}
+
+/*author image styling*/
+.profile-pic {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    flex-shrink: 0; 
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+/*Footer style*/
+footer{
+    background-color: #14181d;
+    color: white;   
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*Small mobile screen style*/
+@media (max-width: 540px) {
+
+    /*Adjustments done to spacing, style, and layout to fit the wireframe for small mobile screen*/
+
+    body{
+        margin: 0px;
+        margin-top: 30px;
+        background-color: #e9e9e9;
+    }
+
+    /*main logo width set to 80px*/
+    .logo{
+        width: 80px;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    nav a{
+        margin: 0 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        margin-bottom: 0;
+        font-family: "Protest Guerrilla";
+        margin-left: 20px;
+        text-align: center;
+        
+    }
+    
+    h2{
+        font-size: 40px;
+        margin-top: 0;
+        font-family: "Protest Guerrilla";
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 300px;
+        word-wrap: break-word;
+        font-family: Josefin Sans;
+        margin-left: 20px;
+    }
+
+    .columns {
+        display: block; 
+        margin-top: 20px; 
+    }
+    
+    .column {
+        margin: 20px 0p; 
+    }
+
+    .heading{
+        font-size: 48px;
+        font-family: "Protest Guerrilla";
+        text-align: center;
+    }
+    .heading-text{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: Josefin Sans;
+    }
+
+    /*one album cover hidden as shown in wireframe*/
+    .cover1{
+        display: none;
+    }
+
+    /*layout of the album cover section changed to 1column*/
+    .album-covers{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .album-covers img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .author-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        
+    }
+    
+    .about-author h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .about-author p {
+        font-family: Josefin Sans;
+        font-size: 15px;
+        margin-left: -20px;
+        
+    }
+
+    .profile-pic{
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/*Large mobile screen style*/
+@media (min-width: 540px) and (max-width: 719px) {
+
+    /*Adjustments done to spacing, style, and layout to fit the wireframe for Large mobile screen*/
+
+    body{
+        margin: 0px;
+        margin-top: 30px;
+        background-color: #e9e9e9;
+    }
+
+    .logo{
+        width: 80px;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    nav a{
+        margin: 0 50px;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 0;
+        font-family: "Protest Guerrilla";
+        margin-left: 20px;
+        text-align: center;
+        
+    }
+    
+    h2{
+        font-size: 50px;
+        margin-top: 0;
+        font-family: "Protest Guerrilla";
+        margin-left: 20px;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 500px;
+        word-wrap: break-word;
+        font-family: Josefin Sans;
+        margin-left: 20px;
+    }
+
+    .columns {
+        display: block; 
+        margin-top: 20px; 
+    }
+    
+    .column {
+        margin: 20px 0p; 
+    }
+
+    .heading{
+        font-size: 48px;
+        font-family: "Protest Guerrilla";
+        text-align: center;
+    }
+    .heading-text{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: Josefin Sans;
+    }
+
+    .cover1{
+        display: none;
+    }
+
+    .album-covers{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .album-covers img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .author-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        
+    }
+    
+    
+    .about-author h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .about-author p {
+        font-family: Josefin Sans;
+        font-size: 15px;
+        margin-left: -30px;
+        
+    }
+
+    .profile-pic{
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+/*Tablet screen style*/
+@media (min-width: 720px) and (max-width: 1023px) {
+
+    /*Adjustments done to spacing, style, and layout to fit the wireframe for Tablet screen*/
+    body{
+        margin: 100px;
+        margin-top: 30px;
+        background-color: #e9e9e9;
+    }
+
+    .logo{
+        width: 80px;
+    }
+    
+    nav{
+        margin-top: 10px;
+    }
+    nav a{
+        margin: 0 50px;
+        text-decoration: none;
+        color: black;
+    
+    }
+    
+    h1{
+        font-size: 50px;
+        margin-bottom: 0;
+        font-family: "Protest Guerrilla";
+        margin-left: 20px;
+        text-align: center;
+        
+    }
+    
+    h2{
+        font-size: 50px;
+        margin-top: 0;
+        font-family: "Protest Guerrilla";
+        margin-left: 20px;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 500px;
+        word-wrap: break-word;
+        font-family: Josefin Sans;
+        margin-left: 20px;
+    }
+
+    .columns {
+        display: block; 
+        margin-top: 20px; 
+    }
+    
+    .column {
+        margin: 20px 0p; 
+    }
+
+    .heading{
+        font-size: 48px;
+        font-family: "Protest Guerrilla";
+        text-align: center;
+    }
+    .heading-text{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: Josefin Sans;
+    }
+
+    .cover1{
+        display: none;
+    }
+
+    /*two column layout for album covers*/
+    .album-covers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .album-covers img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .author-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-top: -200px;
+        padding-bottom: 50px;
+        
+    }
+    
+    .author-info {
+        max-width: 50%;
+    }
+    
+    .about-author h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: -30px;
+    }
+    
+    .about-author p {
+        font-family: Josefin Sans;
+        font-size: 15px;
+        margin-left: -30px;
+    }
+    
+
+}
